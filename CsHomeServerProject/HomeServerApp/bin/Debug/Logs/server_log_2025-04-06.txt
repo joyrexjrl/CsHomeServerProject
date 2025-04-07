@@ -1,0 +1,78 @@
+[2025-04-06 03:24:30] Server Starting...
+[2025-04-06 03:24:30] Listening on: http://*:5000/
+[2025-04-06 03:24:30] Machine Name: RICKMAIN
+[2025-04-06 03:24:45] Server stopped.
+[2025-04-06 12:31:56] Server Starting...
+[2025-04-06 12:31:56] Listening on: http://*:5000/
+[2025-04-06 12:31:56] Machine Name: RICKMAIN
+[2025-04-06 12:32:11] Server stopped.
+[2025-04-06 13:05:01] Server Starting...
+[2025-04-06 13:05:01] Listening on: http://*:5000/
+[2025-04-06 13:05:01] Machine Name: RICKMAIN
+[2025-04-06 13:05:05] Client Connected - [2025-04-06 13:05:05] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 13:05:05] [2025-04-06 13:05:05] Response Sent - Status: 404, Duration: 0.9976ms
+[2025-04-06 13:05:05] Client Connected - [2025-04-06 13:05:05] 127.0.0.1 - GET /favicon.ico - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 13:05:05] [2025-04-06 13:05:05] Response Sent - Status: 404, Duration: 0.9695ms
+[2025-04-06 13:06:19] Client Connected - [2025-04-06 13:06:19] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 13:06:19] [2025-04-06 13:06:19] Response Sent - Status: 404, Duration: 0ms
+[2025-04-06 13:08:07] Server stopped.
+[2025-04-06 14:27:31] Server Starting...
+[2025-04-06 14:27:31] Listening on: http://*:5000/
+[2025-04-06 14:27:31] Machine Name: RICKMAIN
+[2025-04-06 14:27:56] Client Connected - [2025-04-06 14:27:56] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 14:27:56] [2025-04-06 14:27:56] Response Sent - Status: 404, Duration: 0.9952ms
+[2025-04-06 14:27:56] Client Connected - [2025-04-06 14:27:56] 127.0.0.1 - GET /favicon.ico - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 14:27:56] [2025-04-06 14:27:56] Response Sent - Status: 404, Duration: 0ms
+[2025-04-06 14:34:37] Server stopped.
+[2025-04-06 14:37:54] Server Starting...
+[2025-04-06 14:37:54] Listening on: http://*:5000/
+[2025-04-06 14:37:54] Machine Name: RICKMAIN
+[2025-04-06 14:38:00] Client Connected - [2025-04-06 14:38:00] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 14:38:00] [2025-04-06 14:38:00] Response Sent - Status: 404, Duration: 0.9964ms
+[2025-04-06 14:38:00] Client Connected - [2025-04-06 14:38:00] 127.0.0.1 - GET /favicon.ico - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 14:38:00] [2025-04-06 14:38:00] Response Sent - Status: 404, Duration: 0ms
+[2025-04-06 14:38:27] Client Connected - [2025-04-06 14:38:27] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 14:38:27] [2025-04-06 14:38:27] Response Sent - Status: 404, Duration: 0ms
+[2025-04-06 14:38:31] Client Connected - [2025-04-06 14:38:31] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 14:38:31] [2025-04-06 14:38:31] Response Sent - Status: 404, Duration: 0ms
+[2025-04-06 14:40:06] Server stopped.
+[2025-04-06 14:40:34] Server Starting...
+[2025-04-06 14:40:34] Listening on: http://*:5000/
+[2025-04-06 14:40:34] Machine Name: RICKMAIN
+[2025-04-06 14:40:42] Client Connected - [2025-04-06 14:40:42] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 14:40:42] Looking for file: D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\bin\Debug\WebRoot\index.html
+[2025-04-06 14:40:42] [2025-04-06 14:40:42] Response Sent - Status: 404, Duration: 2.3968ms
+[2025-04-06 14:45:58] Server stopped.
+[2025-04-06 15:43:02] Server Starting...
+[2025-04-06 15:43:02] Listening on: http://*:5000/
+[2025-04-06 15:43:02] Machine Name: RICKMAIN
+[2025-04-06 15:43:06] Client Connected - [2025-04-06 15:43:06] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 15:43:06] Looking for file: D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\bin\Debug\WebRoot\index.html
+[2025-04-06 15:43:06] [2025-04-06 15:43:06] Response Sent - Status: 404, Duration: 1.9945ms
+[2025-04-06 15:46:25] Server stopped.
+[2025-04-06 15:48:55] Server Starting...
+[2025-04-06 15:48:55] Listening on: http://*:5000/
+[2025-04-06 15:48:55] Machine Name: RICKMAIN
+[2025-04-06 15:49:00] Client Connected - [2025-04-06 15:49:00] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 15:49:00] Looking for file: D:\CsHomeServerProject\WebRoot\index.html
+[2025-04-06 15:49:00] [2025-04-06 15:49:00] Response Sent - Status: 200, Duration: 2.9902ms
+[2025-04-06 15:49:00] Client Connected - [2025-04-06 15:49:00] 127.0.0.1 - GET /styles.css - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 15:49:00] Looking for file: D:\CsHomeServerProject\WebRoot\styles.css
+[2025-04-06 15:49:00] [2025-04-06 15:49:00] Response Sent - Status: 200, Duration: 0.9988ms
+[2025-04-06 15:49:00] Client Connected - [2025-04-06 15:49:00] 127.0.0.1 - GET /main.js - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 15:49:00] Looking for file: D:\CsHomeServerProject\WebRoot\main.js
+[2025-04-06 15:49:00] [2025-04-06 15:49:00] Response Sent - Status: 200, Duration: 1.9686ms
+[2025-04-06 15:49:37] Server stopped.
+[2025-04-06 15:50:18] Server Starting...
+[2025-04-06 15:50:18] Listening on: http://*:5000/
+[2025-04-06 15:50:18] Machine Name: RICKMAIN
+[2025-04-06 15:50:21] Client Connected - [2025-04-06 15:50:21] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 15:50:21] Looking for file: D:\CsHomeServerProject\WebRoot\index.html
+[2025-04-06 15:50:21] [2025-04-06 15:50:21] Response Sent - Status: 200, Duration: 1.9941ms
+[2025-04-06 15:50:21] Client Connected - [2025-04-06 15:50:21] 127.0.0.1 - GET /styles.css - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 15:50:21] Looking for file: D:\CsHomeServerProject\WebRoot\styles.css
+[2025-04-06 15:50:21] [2025-04-06 15:50:21] Response Sent - Status: 200, Duration: 1.9918ms
+[2025-04-06 15:50:21] Client Connected - [2025-04-06 15:50:21] 127.0.0.1 - GET /main.js - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-06 15:50:21] Looking for file: D:\CsHomeServerProject\WebRoot\main.js
+[2025-04-06 15:50:21] [2025-04-06 15:50:21] Response Sent - Status: 200, Duration: 0.969ms
+[2025-04-06 15:50:27] Server stopped.

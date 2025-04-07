@@ -1,0 +1,10 @@
+D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\bin\Debug\HomeServerApp.exe.config
+D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\bin\Debug\HomeServerApp.exe
+D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\bin\Debug\HomeServerApp.pdb
+D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\obj\Debug\HomeServerApp.csproj.AssemblyReference.cache
+D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\obj\Debug\HomeServerApp.Properties.Resources.resources
+D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\obj\Debug\HomeServerApp.csproj.GenerateResource.cache
+D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\obj\Debug\HomeServerApp.csproj.CoreCompileInputs.cache
+D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\obj\Debug\HomeServerApp.exe
+D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\obj\Debug\HomeServerApp.pdb
+D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\obj\Debug\HomeServerApp.Form1.resources
