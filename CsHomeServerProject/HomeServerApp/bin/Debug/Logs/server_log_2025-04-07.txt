@@ -1,0 +1,12 @@
+[2025-04-07 01:04:27] Server Starting...
+[2025-04-07 01:04:27] Listening on: http://*:5000/
+[2025-04-07 01:04:27] Machine Name: RICKMAIN
+[2025-04-07 01:04:39] Client Connected - [2025-04-07 01:04:39] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-07 01:04:39] [2025-04-07 01:04:39] Response Sent - Status: 200, Duration: 0ms
+[2025-04-07 01:04:55] Server stopped.
+[2025-04-07 01:16:52] Server Starting...
+[2025-04-07 01:16:52] Listening on: http://*:5000/
+[2025-04-07 01:16:52] Machine Name: RICKMAIN
+[2025-04-07 01:16:59] Client Connected - [2025-04-07 01:16:59] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-07 01:16:59] [2025-04-07 01:16:59] Response Sent - Status: 200, Duration: 0ms
+[2025-04-07 01:17:10] Server stopped.

@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Text;
 using System.Linq;
 using System.Net;
@@ -15,10 +13,12 @@ namespace HomeServerApp
 {
     public partial class Form1 : Form
     {
-        HttpListener listener;
-        Thread listenerThread;
-        bool serverRunning = false;
+        HttpListener _listener;
+        Thread _listenerThread;
+        bool _serverRunning = false;
         static readonly string webRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\..\WebRoot"));
+
+        readonly Dictionary<string, Action<HttpListenerRequest, HttpListenerResponse>> _routeHandlers = new Dictionary<string, Action<HttpListenerRequest, HttpListenerResponse>>();
 
         public Form1()
         {
@@ -32,9 +32,9 @@ namespace HomeServerApp
                 MessageBox.Show("HttpListener is not supported on this system.");
                 return;
             }
-            listener = new HttpListener();
-            listener.Prefixes.Add("http://*:5000/");
-            listener.Start();
+            _listener = new HttpListener();
+            _listener.Prefixes.Add("http://*:5000/");
+            _listener.Start();
 
             Logger.Log("Server Starting...", ServerLogsInfoTextBox);
             Logger.Log("Listening on: http://*:5000/", ServerLogsInfoTextBox);
@@ -53,8 +53,10 @@ namespace HomeServerApp
 
             ServerLogsInfoTextBox.AppendText(logText);
 
-            listenerThread = new Thread(HandleRequests);
-            listenerThread.Start();
+            RouteHandlers.RegisterServerRoutes();
+
+            _listenerThread = new Thread(HandleRequests);
+            _listenerThread.Start();
 
             ServerStartButton.Enabled = false;
             ServerStopButton.Enabled = true;
@@ -63,9 +65,9 @@ namespace HomeServerApp
         void ServerStopButton_Click(object sender, EventArgs e)
         {
             Logger.Log("Server stopped.", ServerLogsInfoTextBox);
-            serverRunning = false;
-            listener?.Stop();
-            listenerThread?.Join();
+            _serverRunning = false;
+            _listener?.Stop();
+            _listenerThread?.Join();
 
             ServerStartButton.Enabled = true;
             ServerStopButton.Enabled = false;
@@ -73,12 +75,12 @@ namespace HomeServerApp
 
         void HandleRequests()
         {
-            serverRunning = true;
-            while (serverRunning)
+            _serverRunning = true;
+            while (_serverRunning)
             {
                 try
                 {
-                    var context = listener.GetContext();
+                    var context = _listener.GetContext();
                     var request = context.Request;
                     var response = context.Response;
 
@@ -98,31 +100,31 @@ namespace HomeServerApp
 
                     var startTime = DateTime.Now;
 
-                    Console.WriteLine($"WebRoot Path: {webRoot}");
+                    bool handled = RouteRegistry.TryHandleRequest(request, response);
 
-                    string rawUrl = request.RawUrl.Split('?')[0];
-                    string localPath = rawUrl == "/" ? "/index.html" : rawUrl;
-                    string filePath = Path.Combine(webRoot, localPath.TrimStart('/'));
-
-                    Console.WriteLine($"Looking for file: {filePath}");
-                    Logger.Log($"Looking for file: {filePath}", ServerLogsInfoTextBox);
-
-                    if (File.Exists(filePath))
+                    if (!handled)
                     {
-                        byte[] buffer = File.ReadAllBytes(filePath);
-                        response.ContentType = GetContentType(filePath);
-                        response.ContentLength64 = buffer.Length;
-                        response.OutputStream.Write(buffer, 0, buffer.Length);
-                        response.StatusCode = 200;
-                    }
-                    else
-                    {
-                        response.StatusCode = 404;
-                        string notFound = "<h1>404 - Not Found</h1>";
-                        byte[] buffer = Encoding.UTF8.GetBytes(notFound);
-                        response.ContentType = "text/html";
-                        response.ContentLength64 = buffer.Length;
-                        response.OutputStream.Write(buffer, 0, buffer.Length);
+                        string rawUrl = request.RawUrl.Split('?')[0];
+                        string localPath = rawUrl == "/" ? "/index.html" : rawUrl;
+                        string filePath = Path.Combine(webRoot, localPath.TrimStart('/'));
+
+                        if (File.Exists(filePath))
+                        {
+                            byte[] buffer = File.ReadAllBytes(filePath);
+                            response.ContentType = GetContentType(filePath);
+                            response.ContentLength64 = buffer.Length;
+                            response.OutputStream.Write(buffer, 0, buffer.Length);
+                            response.StatusCode = 200;
+                        }
+                        else
+                        {
+                            response.StatusCode = 404;
+                            string notFound = "<h1>404 - Not Found</h1>";
+                            byte[] buffer = Encoding.UTF8.GetBytes(notFound);
+                            response.ContentType = "text/html";
+                            response.ContentLength64 = buffer.Length;
+                            response.OutputStream.Write(buffer, 0, buffer.Length);
+                        }                        
                     }
 
                     response.OutputStream.Close();
@@ -132,8 +134,6 @@ namespace HomeServerApp
                     logEntry = $"[{timestamp}] Response Sent - Status: {statusCode}, Duration: {duration.TotalMilliseconds}ms";
                     Logger.Log(logEntry, ServerLogsInfoTextBox);
                 }
-                catch (HttpListenerException) { }
-                catch (ObjectDisposedException) { }
                 catch (Exception ex)
                 {
                     string errorLog = $"[ERROR] {DateTime.Now:yyyy-MM-dd HH:mm:ss} - {ex.Message}\n{ex.StackTrace}";
@@ -159,6 +159,6 @@ namespace HomeServerApp
                 case ".svg": return "image/svg+xml";
                 default: return "application/octet-stream";
             }
-        }
+        }        
     }
 }
