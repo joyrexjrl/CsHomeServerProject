@@ -18,8 +18,6 @@ namespace HomeServerApp
         bool _serverRunning = false;
         static readonly string webRoot = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\..\WebRoot"));
 
-        readonly Dictionary<string, Action<HttpListenerRequest, HttpListenerResponse>> _routeHandlers = new Dictionary<string, Action<HttpListenerRequest, HttpListenerResponse>>();
-
         public Form1()
         {
             InitializeComponent();
@@ -52,6 +50,7 @@ namespace HomeServerApp
                 $"[{timeStamp}] Server Status: RUNNING\n\n";
 
             ServerLogsInfoTextBox.AppendText(logText);
+            AppendLogSeparator();
 
             RouteHandlers.RegisterServerRoutes();
 
@@ -97,6 +96,7 @@ namespace HomeServerApp
                     string timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                     string logEntry = $"[{timestamp}] {clientIP} - {method} {requestUrl} - UserAgent: {userAgent}";
                     Logger.Log($"Client Connected - {logEntry}", ServerLogsInfoTextBox);
+                    AppendLogSeparator();
 
                     var startTime = DateTime.Now;
 
@@ -133,12 +133,14 @@ namespace HomeServerApp
                     string statusCode = response.StatusCode.ToString();
                     logEntry = $"[{timestamp}] Response Sent - Status: {statusCode}, Duration: {duration.TotalMilliseconds}ms";
                     Logger.Log(logEntry, ServerLogsInfoTextBox);
+                    AppendLogSeparator();
                 }
                 catch (Exception ex)
                 {
                     string errorLog = $"[ERROR] {DateTime.Now:yyyy-MM-dd HH:mm:ss} - {ex.Message}\n{ex.StackTrace}";
                     Console.WriteLine(errorLog);
                     Logger.Log(errorLog, ServerLogsInfoTextBox);
+                    AppendLogSeparator();
                 }
             }
         }
@@ -159,6 +161,17 @@ namespace HomeServerApp
                 case ".svg": return "image/svg+xml";
                 default: return "application/octet-stream";
             }
-        }        
+        }
+
+        void AppendLogSeparator()
+        {
+            if (ServerLogsInfoTextBox.InvokeRequired) ServerLogsInfoTextBox.Invoke(new Action(AppendLogSeparator));
+            else
+            {
+                ServerLogsInfoTextBox.AppendText(Environment.NewLine);
+                ServerLogsInfoTextBox.AppendText("--------------------------------------");
+                ServerLogsInfoTextBox.AppendText(Environment.NewLine + Environment.NewLine);
+            }            
+        }
     }
 }

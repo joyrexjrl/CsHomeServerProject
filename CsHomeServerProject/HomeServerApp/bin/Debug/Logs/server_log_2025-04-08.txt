@@ -1,0 +1,78 @@
+[2025-04-08 12:59:51] Server Starting...
+[2025-04-08 12:59:51] Listening on: http://*:5000/
+[2025-04-08 12:59:51] Machine Name: RICKMAIN
+[2025-04-08 13:00:07] Client Connected - [2025-04-08 13:00:07] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:00:07] [ERROR] 2025-04-08 13:00:07 - Cross-thread operation not valid: Control 'ServerLogsInfoTextBox' accessed from a thread other than the thread it was created on.
+   at System.Windows.Forms.Control.get_Handle()
+   at System.Windows.Forms.TextBoxBase.GetSelectionStartAndLength(Int32& start, Int32& length)
+   at System.Windows.Forms.TextBoxBase.AppendText(String text)
+   at HomeServerApp.Form1.AppendLogSeparator() in D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\Form1.cs:line 170
+   at HomeServerApp.Form1.HandleRequests() in D:\CsHomeServerProject\CsHomeServerProject\HomeServerApp\Form1.cs:line 101
+[2025-04-08 13:06:31] Server Starting...
+[2025-04-08 13:06:31] Listening on: http://*:5000/
+[2025-04-08 13:06:31] Machine Name: RICKMAIN
+[2025-04-08 13:06:34] Client Connected - [2025-04-08 13:06:34] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:06:34] Client Connected - [2025-04-08 13:06:34] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:06:34] [2025-04-08 13:06:34] Response Sent - Status: 200, Duration: 1.0204ms
+[2025-04-08 13:06:34] [2025-04-08 13:06:34] Response Sent - Status: 200, Duration: 1.0204ms
+[2025-04-08 13:06:47] Server stopped.
+[2025-04-08 13:11:11] Server Starting...
+[2025-04-08 13:11:11] Listening on: http://*:5000/
+[2025-04-08 13:11:11] Machine Name: RICKMAIN
+[2025-04-08 13:11:13] Client Connected - [2025-04-08 13:11:13] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:11:13] Client Connected - [2025-04-08 13:11:13] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:11:13] [2025-04-08 13:11:13] Response Sent - Status: 200, Duration: 0.9702ms
+[2025-04-08 13:11:13] [2025-04-08 13:11:13] Response Sent - Status: 200, Duration: 0.9702ms
+[2025-04-08 13:11:19] Server stopped.
+[2025-04-08 13:23:10] Server Starting...
+[2025-04-08 13:23:10] Listening on: http://*:5000/
+[2025-04-08 13:23:10] Machine Name: RICKMAIN
+[2025-04-08 13:23:13] Client Connected - [2025-04-08 13:23:13] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:23:13] Client Connected - [2025-04-08 13:23:13] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:23:13] [2025-04-08 13:23:13] Response Sent - Status: 200, Duration: 0.9986ms
+[2025-04-08 13:23:13] [2025-04-08 13:23:13] Response Sent - Status: 200, Duration: 0.9986ms
+[2025-04-08 13:23:14] Client Connected - [2025-04-08 13:23:14] 127.0.0.1 - GET /styles.css - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:23:14] Client Connected - [2025-04-08 13:23:14] 127.0.0.1 - GET /styles.css - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:23:14] [2025-04-08 13:23:14] Response Sent - Status: 200, Duration: 0ms
+[2025-04-08 13:23:14] [2025-04-08 13:23:14] Response Sent - Status: 200, Duration: 0ms
+[2025-04-08 13:23:14] Client Connected - [2025-04-08 13:23:14] 127.0.0.1 - GET /main.js - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:23:14] Client Connected - [2025-04-08 13:23:14] 127.0.0.1 - GET /main.js - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:23:14] [2025-04-08 13:23:14] Response Sent - Status: 200, Duration: 0ms
+[2025-04-08 13:23:14] [2025-04-08 13:23:14] Response Sent - Status: 200, Duration: 0ms
+[2025-04-08 13:23:25] Server stopped.
+[2025-04-08 13:33:40] Server Starting...
+[2025-04-08 13:33:40] Listening on: http://*:5000/
+[2025-04-08 13:33:40] Machine Name: RICKMAIN
+[2025-04-08 13:33:45] Server stopped.
+[2025-04-08 13:34:41] Server Starting...
+[2025-04-08 13:34:41] Listening on: http://*:5000/
+[2025-04-08 13:34:41] Machine Name: RICKMAIN
+[2025-04-08 13:34:44] Client Connected - [2025-04-08 13:34:44] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:34:44] Client Connected - [2025-04-08 13:34:44] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:34:44] [2025-04-08 13:34:44] Response Sent - Status: 200, Duration: 1.0262ms
+[2025-04-08 13:34:44] [2025-04-08 13:34:44] Response Sent - Status: 200, Duration: 1.0262ms
+[2025-04-08 13:34:44] Client Connected - [2025-04-08 13:34:44] 127.0.0.1 - GET /styles.css - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:34:44] Client Connected - [2025-04-08 13:34:44] 127.0.0.1 - GET /styles.css - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:34:44] [2025-04-08 13:34:44] Response Sent - Status: 200, Duration: 0ms
+[2025-04-08 13:34:44] [2025-04-08 13:34:44] Response Sent - Status: 200, Duration: 0ms
+[2025-04-08 13:34:44] Client Connected - [2025-04-08 13:34:44] 127.0.0.1 - GET /main.js - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:34:44] Client Connected - [2025-04-08 13:34:44] 127.0.0.1 - GET /main.js - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:34:44] [2025-04-08 13:34:44] Response Sent - Status: 200, Duration: 0.9982ms
+[2025-04-08 13:34:44] [2025-04-08 13:34:44] Response Sent - Status: 200, Duration: 0.9982ms
+[2025-04-08 13:34:48] Server stopped.
+[2025-04-08 13:35:25] Server Starting...
+[2025-04-08 13:35:25] Listening on: http://*:5000/
+[2025-04-08 13:35:25] Machine Name: RICKMAIN
+[2025-04-08 13:35:28] Client Connected - [2025-04-08 13:35:28] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:35:28] Client Connected - [2025-04-08 13:35:28] 127.0.0.1 - GET / - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:35:28] [2025-04-08 13:35:28] Response Sent - Status: 200, Duration: 0.972ms
+[2025-04-08 13:35:28] [2025-04-08 13:35:28] Response Sent - Status: 200, Duration: 0.972ms
+[2025-04-08 13:35:28] Client Connected - [2025-04-08 13:35:28] 127.0.0.1 - GET /styles.css - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:35:28] Client Connected - [2025-04-08 13:35:28] 127.0.0.1 - GET /styles.css - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:35:28] [2025-04-08 13:35:28] Response Sent - Status: 200, Duration: 1.0187ms
+[2025-04-08 13:35:28] [2025-04-08 13:35:28] Response Sent - Status: 200, Duration: 1.0187ms
+[2025-04-08 13:35:28] Client Connected - [2025-04-08 13:35:28] 127.0.0.1 - GET /main.js - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:35:28] Client Connected - [2025-04-08 13:35:28] 127.0.0.1 - GET /main.js - UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+[2025-04-08 13:35:28] [2025-04-08 13:35:28] Response Sent - Status: 200, Duration: 0.998ms
+[2025-04-08 13:35:28] [2025-04-08 13:35:28] Response Sent - Status: 200, Duration: 0.998ms
+[2025-04-08 13:35:35] Server stopped.

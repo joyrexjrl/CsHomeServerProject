@@ -11,15 +11,9 @@ namespace HomeServerApp.Utils
         static readonly Dictionary<string, Action<HttpListenerRequest, HttpListenerResponse>> _routeHandlers
             = new Dictionary<string, Action<HttpListenerRequest, HttpListenerResponse>>();
 
-        public static void RegisterGetRoute(string route, Action<HttpListenerRequest, HttpListenerResponse> handler)
-        {
-            _routeHandlers[route] = handler;
-        }
+        public static void RegisterGetRoute(string route, Action<HttpListenerRequest, HttpListenerResponse> handler) => _routeHandlers[route] = handler;
 
-        public static void RegisterPostRoute(string method, string route, Action<HttpListenerRequest, HttpListenerResponse> handler)
-        {
-            _routeHandlers[route] = handler;
-        }
+        public static void RegisterPostRoute(string method, string route, Action<HttpListenerRequest, HttpListenerResponse> handler) => _routeHandlers[route] = handler;
 
         public static bool TryHandleRequest(HttpListenerRequest request, HttpListenerResponse response)
         {

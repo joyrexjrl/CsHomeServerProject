@@ -11,16 +11,7 @@ namespace HomeServerApp.Utils
     {
         public static void RegisterServerRoutes()
         {
-            RouteRegistry.RegisterGetRoute("/", HandleHomePageRequest);
-        }
-
-        public static void HandleHomePageRequest(HttpListenerRequest request, HttpListenerResponse response)
-        {
-            string content = "<h1>Welcome to the Character Generator!</h1>";
-            byte[] buffer = Encoding.UTF8.GetBytes(content);
-            response.ContentType = "text/html";
-            response.ContentLength64 = buffer.Length;
-            response.OutputStream.Write(buffer, 0, buffer.Length);
+            
         }
     }
 }

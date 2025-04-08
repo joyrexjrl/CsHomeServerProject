@@ -14,6 +14,9 @@ namespace HomeServerApp.Utils
 
         public static void Log(string message, TextBox logTextBox = null)
         {
+            if (logTextBox.InvokeRequired) logTextBox.Invoke(new Action(() => Log(message, logTextBox)));
+            else logTextBox.AppendText(message + Environment.NewLine);
+
             try
             {
                 string timeStamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
